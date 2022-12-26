@@ -1,0 +1,18 @@
+.button {
+    font-family: 'Halvar Mittelschrift';
+    font-weight: 900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    background: #2B73FF;
+    border-radius: 5px;
+    &--back {
+        border: 1px solid #2B73FF;
+        background-color: #fff;
+        color: #2B73FF;
+    }
+}

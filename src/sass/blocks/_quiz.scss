@@ -1,0 +1,140 @@
+.quiz {
+    position: relative;
+    min-height: 767px;
+    background: #fff url('../img/quiz/quiz-bg.png') center no-repeat;
+    // background-size: contain;
+    z-index: 2;
+    &__image-one {
+        position: absolute;
+        width: 30%;
+        height: 78%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &__image-two {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 33%;
+        height: 78%;
+        z-index: -1;
+    }
+    &__container {
+        padding-top: 60px;
+        padding-bottom: 106px;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        color: #3B3A41;
+        text-align: center;
+        margin-bottom: 50px;
+        &--color {
+            color: #F01E1E;
+        }
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 35px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 37px;
+        color: #3B3A41;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 810px;
+        margin: 0 auto 75px;
+        justify-content: center;
+    }
+
+    &__radio {
+        display: none;
+
+        &:checked+.quiz__label__text {
+            background:#88B1FF;
+            color: #fff;
+        }
+    }
+
+    &__input-group {
+        width: 385px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    &__label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        color: #111111;
+
+        &__text {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
+            border: 1px solid rgba(59, 58, 65, 0.5);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+            color: #3B3A41;
+            span {
+                font-weight: 300;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+            }
+        }
+    }
+
+    &__button-group {
+        text-align: center;
+    }
+
+    &__button {
+        width: 270px;
+        height: 60px;
+        margin-right: 20px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__input {
+        border: none;
+        outline: none;
+        border: 1px solid rgba(59, 58, 65, 0.5);
+        border-radius: 5px;
+        width: 385px;
+        height: 60px;
+        padding: 0 20px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        &::placeholder {
+            color: rgba(59, 58, 65, 0.5);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__image-mobile {
+        display: none;
+    }
+}

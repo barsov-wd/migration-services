@@ -1,0 +1,25 @@
+.header {
+    padding: 15px 0;
+    background: #F2F2F2;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 46px;
+        color: #3B3A41;
+        &--color {
+            color: #F01E1E;
+        }
+    }
+    &__button {
+        width: 270px;
+        height: 60px;
+    }
+    &__button-mobile {
+        display: none;
+    }
+}
